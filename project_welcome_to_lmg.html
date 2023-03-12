@@ -1,0 +1,509 @@
+<!doctype html>
+
+
+<style>
+
+
+
+body {
+    background: linear-gradient(#f8ebda, #01ffff) 
+    no-repeat; 
+    height:100%;
+
+    background-image: url("https://images.squarespace-cdn.com/content/v1/5d0e1f92156c470001eeb814/1586888380041-820T81TH0RMIC4NOPEXO/Kingsborough2.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+
+
+div.banner{
+    background: linear-gradient(#430064, #ffffff) 
+    no-repeat; 
+    height:100%;
+
+    width:50%;
+    height:30%;
+
+    text-align:top;
+    vertical-align: top;
+    color:solid blackr;
+    padding:20px;
+    text-align:justify; 
+
+    background-size: 100%;
+    border: 2px outset #060307;
+    border-radius: 10px;
+
+    text-shadow:10px 10px 10px black; 
+    box-shadow:10px 10px 10px #ffffff;
+
+    font-family:Segoe Script;
+}
+
+
+
+table.main { 
+    border: 2px solid #0e0a08; 
+    background-color: #430064;
+    padding: 20px;
+    width:90%;
+}
+
+
+
+table.information{
+    border: 2px outset #8600c8;
+    border-radius: 10px;
+}
+
+
+
+tr.information{
+    border: 2px solid #8600c8;
+}
+
+
+
+td.menu{
+    border: 2px solid #0e0a08;
+    background-color: #e79238;
+    padding: 20px;
+    padding-left: 20px;
+    
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+}
+
+
+
+img.caption{
+    border: 2px solid #32004a;
+    width:90px;
+    height:90px;
+    border-radius: 25px;
+}
+
+
+
+li, button{
+    padding: 5px; 
+    background-color: #d0b78b; 
+    display: inline; 
+    border: 2px outset #060307;
+    border-radius: 10px; 
+    color:#5f0f03; 
+    text-shadow: 10px 10px 10px #030801;
+}
+li:hover, button:hover{
+    padding: 5px; 
+    background-color: #f9fefd; 
+    display: inline;
+    border: 2px outset #060307;
+    border-radius: 10px; 
+    color:#1d1f21; 
+    text-shadow: 10px 10px 10px #030801;
+}
+
+
+
+hr.main{
+    color:black;
+    border: 3px outset #060307;
+    border-radius: 25px;
+}
+
+
+
+hr.information{
+    color:black;
+    border: 2px outset #8600c8;
+    border-radius: 25px;
+}
+
+
+
+</style>
+
+
+<html>
+
+
+    <head>
+        <title>Welcome to LMG</title>
+    </head>
+
+
+    <body>
+        <h1>
+            Welcome to LMG
+        </h1>
+        
+        
+        
+        <center>
+            <div class="banner" >
+                <center>
+                    
+                    <sub><sub><sub><sub><sub><sub><sub><sub><sub>
+                                    <img src="data:image/jpeg;base64,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" class="caption">
+                    </sub></sub></sub></sub></sub></sub></sub></sub></sub>
+                    
+                    Welcome to LMG
+                
+                    <sub><sub><sub><sub><sub><sub><sub><sub><sub>
+                                    <img src="data:image/jpeg;base64,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" class="caption">
+                    </sub></sub></sub></sub></sub></sub></sub></sub></sub>
+                    
+                </center>
+            </div>
+            
+            
+            <br><br>
+            
+           
+            <table class="main">
+                <tr>
+                    <td class="menu">
+                        
+                        <center>
+                            <button type="button" id="hider1">Home</button>
+                            <button type="button" id="hider2">About</button>
+                            <button type="button" id="hider3">Information</button>
+                        </center>
+                        
+                    </td>
+                </tr>
+                 
+                 
+                <tr>
+                    <td>
+                        
+                        <br>
+                        <h1>What can be found on this site:</h1>
+                        
+                        Welcome to LMG.  This site is intended for new students who have just arrived at this school and are not yet familiar with it, as well as for those students who do not speak English well enough. 
+                        <br>
+                        <hr class="main">
+                        
+                    </td>
+                </tr>
+                
+                
+                <tr>
+                    <td>
+                        <br>
+                        <h1>Other language versions of the site:</h1>
+                        
+                        <! -- Go to Chinese page -->
+                        <a href="" target="_blank"><button>转到中文页面</button></a>
+                        <br>
+                        
+                        <! -- Go to Russian page -->
+                        <a href="" target="_blank"><button>Перейти на русскую страницу</button></a>
+                        <br>
+                        
+                        <! -- Go to Ukrainian page -->
+                        <a href="" target="_blank"><button>Перейти на українську сторінку</button></a>
+                        <hr class="main">
+                        
+                    </td>
+                </tr>
+                
+                
+                <tr>
+                    <td>
+                        <br>
+                        <h1>Information all beginning students need:</h1>
+                        
+                        <b>1) One important piece of information students need is to know their student ID. The Student ID is a unique code for each student. Students who have just arrived at school to confirm that they came to school at the beginning of the school day use this code for manual entry. When you have a special card you just need to swipe the card reader and you do not need to enter the code manually.</b>
+                        <br><br>
+                        
+                        <b>2) One of the most important information students need is the class schedule:</b>
+                        <table class="information">
+                            <tr>
+                                <td width="250px">
+                                    ⠀
+                                    <hr class="information">
+                                </td>
+                                
+                                <td width="100px">
+                                    Start Time
+                                    <hr class="information">
+                                </td>
+                                
+                                <td width="100px">
+                                    End Time
+                                    <hr class="information">
+                                </td>
+                                
+                                <td width="100px">
+                                    Length
+                                    <hr class="information">
+                                </td>
+                            <tr>
+                                
+                                
+                            <tr>
+                                <td>
+                                    Period 1
+                                    <hr class="information">
+                                </td>
+                                
+                                <td>
+                                    8:10 AM
+                                    <hr class="information">
+                                </td>
+                                
+                                <td>
+                                    8:57 AM
+                                    <hr class="information">
+                                </td>
+                                
+                                <td>
+                                    47 min
+                                    <hr class="information">
+                                </td>
+
+                            <tr>
+                                
+                                
+                            <tr>
+                                <td>
+                                    Period 2
+                                    <hr class="information">
+                                </td>
+                                
+                                <td>
+                                    9:00 AM
+                                    <hr class="information">
+                                </td>
+                                
+                                <td>
+                                    9:47 AM
+                                    <hr class="information">
+                                </td>
+                                
+                                <td>
+                                    47 min
+                                    <hr class="information">
+                                </td>
+                            <tr>
+                                
+                                
+                            <tr>
+                                <td>
+                                    Period 3
+                                    <hr class="information">
+                                </td>
+                                
+                                <td>
+                                    9:50 AM
+                                    <hr class="information">
+                                </td>
+                                
+                                <td>
+                                    10:34 AM
+                                    <hr class="information">
+                                </td>
+                                
+                                <td>
+                                    44 min
+                                    <hr class="information">
+                                </td>
+                            <tr>
+                                
+                                
+                            <tr>
+                                <td>
+                                    Period 4
+                                    <hr class="information">
+                                </td>
+                                
+                                <td>
+                                    10:37 AM
+                                    <hr class="information">
+                                </td>
+                                
+                                <td>
+                                    11:21 AM
+                                    <hr class="information">
+                                </td>
+                                
+                                <td>
+                                    44 min
+                                    <hr class="information">
+                                </td>
+                            <tr>
+                                
+                                
+                            <tr>
+                                <td>
+                                    Period 5
+                                    <hr class="information">
+                                </td>
+                                
+                                <td>
+                                    11:24 AM
+                                    <hr class="information">
+                                </td>
+                                
+                                <td>
+                                    12:08 PM
+                                    <hr class="information">
+                                </td>
+                                
+                                <td>
+                                    44 min
+                                    <hr class="information">
+                                </td>
+                            <tr>
+                                
+                                
+                            <tr>
+                                <td>
+                                    Period 6
+                                    <hr class="information">
+                                </td>
+                                
+                                <td>
+                                    12:11 PM
+                                    <hr class="information">
+                                </td>
+                                
+                                <td>
+                                    12:55 PM
+                                    <hr class="information">
+                                </td>
+                                
+                                <td>
+                                    44 min
+                                    <hr class="information">
+                                </td>
+                            <tr>
+                                
+                                
+                            <tr>
+                                <td>
+                                    Period 7
+                                    <hr class="information">
+                                </td>
+                                
+                                <td>
+                                    12:58 PM
+                                    <hr class="information">
+                                </td>
+                                
+                                <td>
+                                    1:42 PM
+                                    <hr class="information">
+                                </td>
+                                
+                                <td>
+                                    44 min
+                                    <hr class="information">
+                                </td>
+                            <tr>
+                                
+                                
+                            <tr>
+                                <td>
+                                    Period 8
+                                    <hr class="information">
+                                </td>
+                                
+                                <td>
+                                    1:45 PM
+                                    <hr class="information">
+                                </td>
+                                
+                                <td>
+                                    2:31 PM
+                                    <hr class="information">
+                                </td>
+                                
+                                <td>
+                                    46 min
+                                    <hr class="information">
+                                </td>
+                            <tr>   
+                            
+                            
+                            <tr>
+                                <td>
+                                    Parental Engagement - Tuesday
+                                    <hr class="information">
+                                </td>
+                                
+                                <td>
+                                    2:31 PM
+                                    <hr class="information">
+                                </td>
+                                
+                                <td>
+                                    3:00 PM
+                                    <hr class="information">
+                                </td>
+                                
+                                <td>
+                                    29 min
+                                    <hr class="information">
+                                </td>
+                            <tr> 
+                        </table>
+                        
+                        <hr class="main">
+                    </td>
+                </tr>
+                
+                
+                <tr>
+                    <td>
+                        <br>
+                        <h1>Frequently asked questions:</h1>
+                        
+                        <details>
+                            <summary>
+                               Why did I come here in the first place?
+                            </summary>
+                            <ul>
+                                Answer: Probably to read this question.
+                            </ul>
+                        </details>
+                        
+                        <br>
+                        
+                        <details>
+                            <summary>
+                                Here could be your question.
+                            </summary>
+                            <ul>
+                                Answer:---
+                            </ul>
+                        </details>
+                        
+                        <br>
+                        
+                        <details>
+                            <summary>
+                                Here could be your question.
+                            </summary>
+                            <ul>
+                                Answer:---
+                            </ul>
+                        </details>
+                        
+                        <hr class="main">
+                    </td>
+                </tr>
+            </table>
+        
+        </center>
+        
+    </body>
+
+
+</html>
